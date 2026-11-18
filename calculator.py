@@ -1,5 +1,7 @@
 
 # SCCM4910  lab project - a four-operation calculator
+
+
 def add (a, b):
 	return a + b
 
@@ -28,6 +30,13 @@ def main():
 			print("result: ",divide(a, b))
 		else:
 			print("unknown operator: ",op)
+
+def CircleArea(r):
+	if r >= 0:
+		return 3.14 * r * r
+	else:
+		return "NaN"
+	
 
 if __name__ == "__main__":
 	main()
