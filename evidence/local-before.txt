@@ -1,0 +1,26 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /opt/python-venv/sccm-4910/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/wheston/h-drive/calculator
+collecting ... collected 5 items
+
+test_calculator.py::test_multiply PASSED                                 [ 20%]
+test_calculator.py::test_divide PASSED                                   [ 40%]
+test_calculator.py::test_add PASSED                                      [ 60%]
+test_calculator.py::test_sub PASSED                                      [ 80%]
+test_calculator.py::test_circleArea FAILED                               [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_circleArea ________________________________
+
+    def test_circleArea():
+>       assert CircleArea(-4) == "Error"
+E       AssertionError: assert 'NaN' == 'Error'
+E         
+E         - Error
+E         + NaN
+
+test_calculator.py:17: AssertionError
+=========================== short test summary info ============================
+FAILED test_calculator.py::test_circleArea - AssertionError: assert 'NaN' == ...
+========================= 1 failed, 4 passed in 0.12s ==========================
